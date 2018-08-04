@@ -14,6 +14,6 @@ namespace SimpleCrm.Models
         public string MiddleName { get; set; }
         public string Email { get; set; }
         public string HashedPass { get; set; }
-        public List<string> roles { get; set; }
+        public List<string> Roles { get; set; }
     }
 }

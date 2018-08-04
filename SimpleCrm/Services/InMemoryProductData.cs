@@ -18,10 +18,30 @@ namespace SimpleCrm.Services
                 new Product {id = 3, ProductName = "Ehco Thermal Monitor"}
             };
         }
-       
+
+        public Product Create(Product product)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Product Delete(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Product Get(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<Product> GetAll()
         {
             return _products.OrderBy(p => p.ProductName);
+        }
+
+        public Product Update(Product product)
+        {
+            throw new NotImplementedException();
         }
     }
 }
