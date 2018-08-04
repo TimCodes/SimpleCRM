@@ -1,0 +1,21 @@
+﻿@model IEnumerable<SimpleCrm.Models.Product>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h2>Hello From Home </h2>
+    <table>
+        @foreach(var product in Model){ 
+        <tr>
+            <td><h3>@product.ProductName</h3></td>
+            <td> <h4>@product.id</h4></td>
+        </tr>
+        }
+        
+    </table>
+    
+   
+</body>
+</html>
