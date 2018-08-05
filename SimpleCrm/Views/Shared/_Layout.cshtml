@@ -1,0 +1,45 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Starter Template - Materialize</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="~/css/materialize.css" rel="stylesheet" media="screen,projection" />
+    <link href="~css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+</head>
+<body>
+
+
+    @Html.Partial("_Nav");
+    <div class="container">
+        <div class="section">
+            @RenderBody()
+            <!--   Icon Section   -->
+
+        </div>
+        <br><br>
+        @RenderSection("footer", required: false)
+
+    </div>
+    @Html.Partial("Footer");
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="~js/materialize.js"></script>
+    <script src="~/JS/materilizevendor.js"></script>
+    <script src="~/JS/start.js"></script>
+
+
+</body>
+</html>

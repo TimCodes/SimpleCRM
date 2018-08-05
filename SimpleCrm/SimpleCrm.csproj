@@ -4,11 +4,36 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="wwwroot\css\materialize.css" />
+    <Content Remove="wwwroot\css\materialize.min.css" />
+  </ItemGroup>
+
 
   
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+
+  
+
+  <ItemGroup>
+    <Folder Include="scripts\" />
+    <Folder Include="Views\SalesManager\" />
+  </ItemGroup>
+
+
+  
+
+  <ItemGroup>
+    <None Include="wwwroot\css\materialize.css" />
+    <None Include="wwwroot\css\materialize.min.css" />
+    <None Include="wwwroot\css\style.css" />
+    <None Include="wwwroot\JS\Init.js" />
+    <None Include="wwwroot\JS\materialize.js" />
+    <None Include="wwwroot\JS\materialize.min.js" />
   </ItemGroup>
 
 </Project>

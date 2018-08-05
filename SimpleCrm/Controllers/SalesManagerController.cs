@@ -4,11 +4,11 @@ using SimpleCrm.Services;
 
 namespace SimpleCrm.Controllers
 {
-    public class HomeController : Controller
+    public class SalesManagerController : Controller
     {
         private IProductData _productData;
 
-        public HomeController(IProductData productData)
+        public SalesManagerController(IProductData productData)
         {
             _productData = productData;
         }
