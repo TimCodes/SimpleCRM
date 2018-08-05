@@ -7,10 +7,10 @@ namespace SimpleCrm.Models
 {
     public class Lead
     {
-        public int leadid { get; set; }
-        public int contactid { get; set; }
-        public int lastrepid { get; set; }
-        public DateTime LastContact {get; set;}
+        public int id { get; set; }
+        public string contactid { get; set; }
+        public string lastrepid { get; set; }
+        public string LastContact {get; set;}
         public string   Status {get;set;}
 
     }

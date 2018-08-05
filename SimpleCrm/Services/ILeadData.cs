@@ -9,7 +9,7 @@ namespace SimpleCrm.Services
         IEnumerable<Lead> GetAll();
         Lead Get(int id);
         Lead Update(Lead lead);
-        Lead Delete(int id);
+        void Delete(int id);
 
     }
 }

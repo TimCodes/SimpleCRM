@@ -9,7 +9,7 @@ namespace SimpleCrm.Services
         IEnumerable<Contact> GetAll();
         Contact Get(int id);
         Contact Update(Contact contact);
-        Contact Delete(int id);
+        void Delete(int id);
 
     }
 }

@@ -9,7 +9,7 @@ namespace SimpleCrm.Services
         IEnumerable<Product> GetAll();
         Product Get(int id);
         Product Update(Product product);
-        Product Delete(int id);
+        void Delete(int id);
 
     }
 }

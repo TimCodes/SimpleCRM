@@ -21,17 +21,19 @@ namespace SimpleCrm.Services
 
         public Product Create(Product product)
         {
-            throw new NotImplementedException();
+            _products.Add(product);
+            return product;
         }
 
-        public Product Delete(int id)
+        public void Delete(int id)
         {
-            throw new NotImplementedException();
+            var productIndex = _products.FindIndex(p => p.id == id);
+            _products.RemoveAt(productIndex);
         }
 
         public Product Get(int id)
         {
-            throw new NotImplementedException();
+            return _products.Where(p => p.id == id).FirstOrDefault();
         }
 
         public IEnumerable<Product> GetAll()
@@ -41,7 +43,11 @@ namespace SimpleCrm.Services
 
         public Product Update(Product product)
         {
-            throw new NotImplementedException();
+            var productIndex = _products.FindIndex(p => p.id == product.id);
+            _products.RemoveAt(productIndex);
+            _products.Insert(productIndex, product);
+            return product;
+
         }
     }
 }
