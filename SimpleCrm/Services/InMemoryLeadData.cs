@@ -40,7 +40,7 @@ namespace SimpleCrm.Services
 
         public IEnumerable<Lead> GetAll()
         {
-            return _Leads.OrderBy( l=> l.Status);
+            return _Leads.OrderBy( l=> l.Status).ToList();
         }
 
         public Lead Update(Lead Lead)

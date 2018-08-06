@@ -23,6 +23,11 @@ namespace SimpleCrm
             services.AddSingleton<IGreeter, Greeter>();
             // scoped create once per http request 
             services.AddScoped<IProductData, InMemoryProductData>();
+            services.AddScoped<IActivityData, InMemoryActivityData>();
+            services.AddScoped<IContactData, InMemoryContactData>();
+            services.AddScoped<ILeadData, InMemoryLeadData>();
+            services.AddScoped<IOpportunityData, InMemoryOpportunityData>();
+
             services.AddMvc();
 
             // transcient create instancce every time its needed 

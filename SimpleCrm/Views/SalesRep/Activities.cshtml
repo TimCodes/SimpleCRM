@@ -1,6 +1,29 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-<div>Activits</div>
+﻿@model  IEnumerable<SalesRepActivityViewModel>
+
+<h3 class ="header">Activities</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Contact First Name</th>
+            <th>Contact Last Name</th>
+            <th>Contact Phone</th>
+            <th>Type</th>
+            <th>Status</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var activity in Model)
+        {
+        <tr>
+            <td>@activity.FirstName</td>
+            <td>@activity.LastName</td>
+            <td>@activity.Phone</td>
+            <td>@activity.ActivityType </td>
+            <td>@activity.Status </td>
+            <td>@activity.LastModified </td>
+        </tr>
+        }
+    </tbody>
+</table>

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AppSettings } from '../../app.settings';
 import { Settings } from '../../app.settings.model';
+import { SortingComponent } from '../tables/sorting/sorting.component';
+
 
 @Component({
   selector: 'app-dashboard',

@@ -26,5 +26,13 @@ namespace SimpleCrm.Controllers
             //new ObjectResult(model);
             return View(model);
         }
+
+        public IActionResult Act()
+        {
+            var model = _productData.GetAll();
+            //new Product { id = 1, ProductName = "Cheese" };
+            //new ObjectResult(model);
+            return View(model);
+        }
     }
 }

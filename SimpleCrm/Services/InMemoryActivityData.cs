@@ -6,11 +6,11 @@ using SimpleCrm.Models;
 
 namespace SimpleCrm.Services
 {
-    public class InMemoryactivityData : IActivityData
+    public class InMemoryActivityData : IActivityData
     {
         List<Activity> _activities;
 
-        public InMemoryactivityData()
+        public InMemoryActivityData()
         {
             _activities = new List<Activity> {
                new Activity {id = 1, ActivityType = "Call", contactid = 1, repid = 1, LastModified =  DateTime.Now, Status = "Completed"},
@@ -40,7 +40,7 @@ namespace SimpleCrm.Services
 
         public IEnumerable<Activity> GetAll()
         {
-            return _activities.OrderBy(a => a.ActivityType);
+            return _activities.OrderBy(a => a.ActivityType).ToList();
         }
 
         public Activity Update(Activity activity)

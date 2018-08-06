@@ -9,7 +9,7 @@ namespace SimpleCrm.Services
         IEnumerable<Opportunity> GetAll();
         Opportunity Get(int id);
         Opportunity Update(Opportunity opportunity);
-        Opportunity Delete(int id);
+        void Delete(int id);
 
     }
 }

@@ -1,6 +1,25 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-<div>Contacts</div>
+﻿@model IEnumerable<Contact>
+
+<h3 class="header">Contacts</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Contact First Name</th>
+            <th>Contact Last Name</th>
+            <th>Contact Phone</th>
+            <th>Contact Email</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var contact in Model)
+        {
+            <tr>
+                <td>@contact.FirstName</td>
+                <td>@contact.LastName</td>
+                <td>@contact.Phone</td>
+                <td>@contact.Email </td>
+            </tr>
+        }
+    </tbody>
+</table>

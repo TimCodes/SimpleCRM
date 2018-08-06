@@ -7,7 +7,7 @@ namespace SimpleCrm.Models
 {
     public class Opportunity
     {
-        public int oppurnityid { get; set; }
+        public int id { get; set; }
         public int contactid { get; set; }
         public int lastrepid { get; set; }
         public DateTime LastContact {get; set;}
